@@ -1,0 +1,46 @@
+.conteiner-users {
+    padding: 0 20px;
+    margin: 0 0 100px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 38px;
+    color: black;
+    margin-top: 0;
+}
+
+.table_user {
+    display: grid;
+    grid-template: repeat(auto-fit, 300px) / repeat(4, 260px);
+    grid-column-gap: 70px;
+    grid-row-gap: 30px;
+}
+
+.userTable {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(241, 225, 225, 0.904);
+    transition: .1s ease;
+    padding: 20px 0 0 0;
+    align-items: center;
+}
+
+.userTable:hover {
+    transform: scale(1.2);
+}
+
+.user-avatar {
+    max-width: 250px;
+    width: 100%;
+}
+
+.user-name {
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+}

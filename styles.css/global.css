@@ -1,0 +1,41 @@
+@import "formInput.css";
+@import "header.css";
+@import "randomuser.css";
+@import "incognito.css";
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #ebeff0;
+    --color-black-grey: #535252;
+    --color-blue: #36cdf7;
+    --color-white: #ffff;
+    --color-sweet-green: #7c8c91;
+    --color-black: black;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.counter {
+    margin: 0 15px 0 15px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+button {
+    outline: none;
+}
