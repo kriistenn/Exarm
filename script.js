@@ -18,15 +18,15 @@ fetch(`https://randomuser.me/api/?results=8`)
 
     //Получаем информацию и создаем userTable, пробегаясь по объекту
     .then(response => response.json())
-    .then(data => data.results.forEach((person) => {
+    .then(data => data.results.forEach((user) => {
 
-        //создаем элементы в контеинере из полоченных объектов при помощи elemUs
+        //создаем элементы в контеинере из полученных объектов при помощи elemUs
 
         const userTable = elemUs("div", "class", "userTable");
 
-        const randomUserName = elemUs("p", "class", "user-name", `${person.name.last} ${person.name.first}`);
+        const randomUserName = elemUs("p", "class", "user-name", `${user.name.last} ${user.name.first}`);
 
-        const randomUserAvatar = elemUs("img", "src", `${person.picture.large}`, null, "class", "user-avatar", "alt", `${person.name.title}`);
+        const randomUserAvatar = elemUs("img", "src", `${user.picture.large}`, null, "class", "user-avatar", "alt", `${user.name.title}`);
 
         userTable.appendChild(randomUserName);
         userTable.appendChild(randomUserAvatar);
